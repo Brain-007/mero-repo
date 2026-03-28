@@ -290,14 +290,6 @@
         }
         setInterval(updateTime, 1000);
         updateTime();
-        // Helper to convert numbers to Nepali Font
-        function toNepaliNumeral(num) {
-            const numerals = {
-                '0': '०', '1': '१', '2': '२', '3': '३', '4': '४',
-                '5': '५', '6': '६', '7': '७', '8': '८', '9': '९'
-            };
-            return num.toString().split('').map(digit => numerals[digit] || digit).join('');
-        }
 
         // New state for month navigation
         let currentMonthIndex = 0;
